@@ -1,0 +1,54 @@
+#home {
+    background-image:
+    linear-gradient(
+        #1e3c72, #2a5298
+    );
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#profile-image img {
+    border-radius: 50%!important;
+    width: 300px;
+}
+
+img {
+    border-radius: 50%!important;
+}
+
+#portfolio {
+    background-image:
+    linear-gradient(
+        #fdfcfb, #e2d1c3
+    );
+}
+
+.about-card {
+    background-image:
+    linear-gradient(
+        #a3bded, #6991c7
+    );
+    color: black;
+}
+
+#contact {
+    background-image:
+    linear-gradient(
+        #434343, #000000
+    );
+    color: white;
+}
+
+.social-contacts {
+    color: white !important;
+}
+
+#contact-links {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-details {
+    margin-left: 100px;
+}

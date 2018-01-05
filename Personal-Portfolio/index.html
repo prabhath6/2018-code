@@ -10,63 +10,170 @@
 </head>
 
 <body>
-    <div class="main">
 
-        <div class="card text-center">
-            <nav class="fixed-top navbar-light bg-light">
-            <div class="card-header">
-                <ul class="nav nav-pills card-header-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#about">About</a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#home">Home</a>
+                <a class="nav-item nav-link" href="#portfolio">Fortfolio</a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
             </div>
-            </nav>
-
-            <div class="card-body" id="home">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="https://wallpapercave.com/wp/yBa8XFy.png" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-body" id="portfolio">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="http://wallzoa.com/wp-content/uploads/2013/08/plain-yellow-backgrounds.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-body" id="about">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="https://hdwallsource.com/img/2014/9/free-gradient-wallpaper-26032-26717-hd-wallpapers.jpg" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </nav>
+
+    <main role="main">
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col" id="home">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="float-left" id="profile-image">
+                                <img src="https://cdn.pixabay.com/photo/2018/01/03/17/15/island-3058763_960_720.jpg" class="rounded" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-9 text-left">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusamus laborum vero id, nam ex mollitia cum incidunt, dolor sequi ab illum in optio ratione accusantium numquam repellat quam ipsum?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in blanditiis iusto vero veniam aliquam, minima provident, excepturi placeat illum deleniti ad similique repudiandae explicabo earum voluptate obcaecati autem fugiat.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusamus dignissimos optio veniam, cupiditate voluptate aspernatur ad vel harum dolorum. Veniam neque consequatur quos, perferendis aliquam obcaecati dolorum incidunt nulla!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, in accusantium. Neque accusamus architecto totam voluptates tempore, eligendi similique dignissimos nihil, iusto harum doloremque, eaque adipisci enim laudantium possimus veniam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col" id="portfolio">
+
+                    <div class="card-columns">
+
+                            <div class="card">
+                                <img class="card-img-top" src="https://images.freeimages.com/images/large-previews/c3a/film-1568846.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Project 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quisquam impedit? Ipsa nihil excepturi omnis libero. Temporibus minima assumenda ipsam labore esse tenetur tempore error distinctio dignissimos quibusdam, dolores reprehenderit.</p>
+                                </div>
+                            </div>
+
+                            <div class="card p-3">
+                                <blockquote class="blockquote mb-0 card-body">
+                                <p>Great to guy to work with in the whole team.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Company 2</cite>
+                                    </small>
+                                </footer>
+                                </blockquote>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/01/03/06/19/sugar-3057660_960_720.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Salt and Sugar project</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque voluptate laboriosam laborum excepturi hic dignissimos! Praesentium tenetur, iure quo tempora debitis libero quidem corporis deleniti iusto pariatur itaque, ipsum suscipit!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card bg-primary text-white text-center p-3">
+                                <blockquote class="blockquote mb-0">
+                                <p>Greatest project i have ever seen</p>
+                                <footer class="blockquote-footer">
+                                    <small>
+                                    Someone famous in <cite title="Source Title">Company x</cite>
+                                    </small>
+                                </footer>
+                                </blockquote>
+                            </div>
+
+                             <div class="card">
+                                <div class="card-body">
+                                <h5 class="card-title">Side Project 1</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card text-center">
+                                <div class="card-body">
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quaerat voluptatem consectetur quo voluptates, blanditiis totam nihil. Voluptatum accusantium doloribus cum saepe! Et veniam laudantium quis dolores placeat tempora consequatur.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                <h5 class="card-title">Side Project 2</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minus non tempore amet, repellendus quas quaerat ex sint numquam laboriosam earum dicta tempora aut illo consectetur sit fuga ipsa? Minima.</p>
+                                </div>
+                            </div>
+
+                            <div class="card p-3 text-right">
+                                <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Open Source</cite>
+                                    </small>
+                                </footer>
+                                </blockquote>
+                            </div>
+
+                        </div>
+
+                </iv>
+
+                <div class="w-100"></div>
+
+                <div class="col" id="about">
+                    <div class="card-group">
+                            <div class="card bg-light text-center about-card">
+                                <div class="card-body">
+                                <h5 class="card-title">High School</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga fugit quo autem atque soluta expedita repellendus rem unde harum. Esse nesciunt blanditiis pariatur ipsa. Sed deserunt molestias laborum ipsa voluptas?</p>
+                                <p class="card-text"><small class="text-muted">Completed Year: 2010</small></p>
+                                </div>
+                            </div>
+                            <div class="card bg-light text-center about-card">
+                                <div class="card-body">
+                                <h5 class="card-title">Bachelors Degree</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequatur natus atque quaerat nesciunt reprehenderit fuga odio illum pariatur ab eum sint a aperiam aut, praesentium ut! Placeat, maxime sint!</p>
+                                <p class="card-text"><small class="text-muted">Completed Year: 2014</small></p>
+                                </div>
+                            </div>
+                            <div class="card bg-light text-center about-card">
+                                <div class="card-body">
+                                <h5 class="card-title">Masters Degree</h5>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, assumenda harum quae nemo facere magnam voluptate veniam quam praesentium, laborum laudantium quasi optio, in numquam molestiae! Ea commodi culpa doloribus!</p>
+                                <p class="card-text"><small class="text-muted">Completed Year: 2016</small></p>
+                                </div>
+                            </div>
+                            </div>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col" id="contact">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4 col-sm-12 offset-md-0">
+                            <h3 class="footer-details">Let's Keep in Touch!</h3>
+                            <div id="contact-links">
+                                <div class="d-inline p-2 bg-dark text-white"><a class="social-contacts" href="#">@example.com</a></div> 
+                                <div class="d-inline p-2 bg-dark text-white"><a class="social-contacts" href="#">yourwebsite.com</a></div>
+                                <div class="d-inline p-2 bg-dark text-white"><a class="social-contacts" target="_blank" href="https://twitter.com/">Twitter</a></div> 
+                                <div class="d-inline p-2 bg-dark text-white"><a class="social-contacts" href="#">LinkedIn</a></div>
+                                <div class="d-inline p-2 bg-dark text-white"><a class="social-contacts" href="#">Facebook</a></div>
+                            </div>
+                            <p class="footer-details">Copyright 2017 by Prabhath Kiran</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </main>
+
 </body>
 
 </html>
