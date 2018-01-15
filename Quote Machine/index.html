@@ -8,9 +8,18 @@
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="index.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script src="index.js"></script>
+    
 </head>
 
-<body>
+<body onload="getRandomQuoteData();">
     <div class="fluid-container">
         <div class="quote_machine">
             <div class="row align-items-center">
@@ -18,13 +27,18 @@
                 </div>
                 <div class="col">
                     <h3>Quote Machine</h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, laudantium. Assumenda accusantium culpa at, sint ut iure ipsa
-                    voluptatum. Voluptatum debitis dicta qui ipsum reiciendis ea quaerat, totam itaque incidunt?
+                    <p id="quote-content"></p>
+                    <button type="button" class="btn btn-info " onclick="tweet();"><i data-feather="twitter"></i></button>
+                    <button type="button" class="btn btn-info" onclick="facebook();"><i data-feather="facebook"></i></button>
+                    <button id="new_quote" type="button" class="btn btn-info" onclick="getRandomQuoteData();">New Quote</button>
                 </div>
                 <div class="col">
                 </div>
             </div>
         </div>
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>

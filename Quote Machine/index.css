@@ -13,3 +13,7 @@ body {
 .quote_machine {
     vertical-align: middle;
 }
+
+#new_quote {
+    margin-left: 120px;
+}
