@@ -16,26 +16,43 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script:400,700|Pacifico" rel="stylesheet"> 
     
 </head>
 
 <body onload="getRandomQuoteData();">
     <div class="fluid-container">
-        <div class="quote_machine">
-            <div class="row align-items-center">
+            <div id="quote-container" class="row align-items-center">
                 <div class="col">
                 </div>
-                <div class="col">
-                    <h3>Quote Machine</h3>
-                    <p id="quote-content"></p>
-                    <button type="button" class="btn btn-info " onclick="tweet();"><i data-feather="twitter"></i></button>
-                    <button type="button" class="btn btn-info" onclick="facebook();"><i data-feather="facebook"></i></button>
-                    <button id="new_quote" type="button" class="btn btn-info" onclick="getRandomQuoteData();">New Quote</button>
+                <div  class="col">
+                    <div class="card border-dark text-white bg-info mb-4" style="max-width: 100rem; max-height: 100rem;">
+                        <div id="quote-title" class="card-header text-center">Quote Machine</div>
+                        <div class="card-body">
+                            <p id="quote-content" class="card-text"></p>
+                        </div>
+                        <div class="card-footer">
+                                <p id="quote-footer" class="card-text text-right"><small id="author" class="text-right"></small></p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-9 text-left">
+                                <button type="button" class="btn btn-success" onclick="getRandomQuoteData();">Quote</button>
+                            </div>
+                            <div class="col-1">
+                                <button type="button" class="btn btn-primary" onclick="tweet();"><i data-feather="twitter"></i></button>
+                            </div>
+                            <div class="col-2 text-right">
+                                <button type="button" class="btn btn-primary" onclick="facebook();"><i data-feather="facebook"></i></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
+                </div>
                 </div>
             </div>
-        </div>
     <script>
         feather.replace()
     </script>

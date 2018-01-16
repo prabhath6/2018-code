@@ -8,12 +8,23 @@ body {
     color: #fff;
     text-align: center;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    font-size: 30;
 }
 
-.quote_machine {
-    vertical-align: middle;
+#quote-container {
+    margin-top: 50px;
 }
 
-#new_quote {
-    margin-left: 120px;
+#quote-content {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: bold;
+}
+
+#quote-title {
+    font-family: 'Pacifico', cursive;
+}
+
+#quote-footer {
+    font-family: 'Dancing Script', cursive;
+    font-size: bold;
 }

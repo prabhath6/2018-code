@@ -1,4 +1,4 @@
-let quote;
+let quote, title;
 function getRandomQuoteData() {
     var request = $.ajax({
         url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
@@ -9,7 +9,9 @@ function getRandomQuoteData() {
     
     request.done(function( msg ) {
         document.getElementById("quote-content").innerHTML = msg[0].content;
-        quote = document.getElementById("quote-content").innerText;  
+        document.getElementById("author").innerText = msg[0].title;
+        quote = document.getElementById("quote-content").innerText;
+        title = document.getElementById("author").innerText;
     });
 }
 function openURL(url){
