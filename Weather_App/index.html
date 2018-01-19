@@ -10,13 +10,15 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="index.css">
     <script src="index.js" ></script>
 </head>
 <body onload="getCoordinates();">
     <div>
-        <p id="lat"></p>
-        <p id="log"></p>
         <pre id="weather"></pre>
     </div>
+    <h2 id="weather-icon"></h2>
+    <h3 id="weather-degree"></h3>
 </body>
 </html>
