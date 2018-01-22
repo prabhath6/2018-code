@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Machine</title>
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" ></script>
+    <script src="index.js"></script>
 </head>
+
 <body onload="getCoordinates();">
-    <div>
-        <pre id="weather"></pre>
-    </div>
-    <h2 id="weather-icon"></h2>
-    <h3 id="weather-degree"></h3>
+
+    <div class="container-fluid">
+
+        <div>
+            <pre id="weather"></pre>
+        </div>
+
+        <div class="weather-details">
+        </div>
+
+            <div class="col-md-6 offset-md-3">
+                <h2>
+                    <h2 id="weather-icon"></h2>
+                    <p id="temp-val"></p>
+                    <h2><i id="degree-icon" class="wi wi-celsius" onclick="convertTemp();"></i></h2>
+                </h2>
+            </div>
+
+            <form>
+                <div class="form-group row">
+                    <label class="col-3 col-form-label mr-2">Max</label>
+                    <div class="col-8">
+                        <p class="form-control-static" id="weather-max"></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-3 col-form-label mr-2">Min</label>
+                    <div class="col-8">
+                        <p class="form-control-static" id="weather-min"></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-3 col-form-label mr-2">Humidity</label>
+                    <div class="col-8">
+                        <p class="form-control-static" id="weather-humidity"></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-3 col-form-label mr-2">Wind Speed</label>
+                    <div class="col-8">
+                        <p class="form-control-static" id="weather-speed"></p>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
 </body>
+
 </html>
