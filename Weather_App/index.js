@@ -22,8 +22,10 @@ function getCoordinates() {
 
 function getTemp(position) {
 
-    var weather = document.getElementById("weather");
     var weatherIcon = document.getElementById("weather-icon");
+    var weatherDescription = document.getElementById("weather-description");
+    var tempState = document.getElementById("temp-state");
+    var tempCountry = document.getElementById("temp-country");
 
     var request = $.ajax({
         url: `https://fcc-weather-api.glitch.me/api/current?lat=${position.coords.latitude}&lon=${position.coords.longitude}`,
@@ -41,6 +43,7 @@ function getTemp(position) {
         usefulData["state"] = msg.name;
         usefulData["country"] = msg.sys.country;
         usefulData["weather"] = msg.weather[0].main;
+
         temp_min.innerText = msg.main.temp_max;
         temp_max.innerText = msg.main.temp_min;
         humidity.innerText = msg.main.humidity;
@@ -48,7 +51,9 @@ function getTemp(position) {
         temp = msg.main.temp;
         var iconCodeHtml = '<i class="wi wi-owm-' + msg.weather[0].id + '"></i>';
         weatherIcon.innerHTML = iconCodeHtml;
-        weather.innerText = JSON.stringify(usefulData, null, '\t');
+        weatherDescription.innerText = usefulData["weather"];
+        tempState.innerText = usefulData.state + ', ';
+        tempCountry.innerText = usefulData.country;
 
         var tempVal = document.getElementById("temp-val");
         tempVal.innerText = temp;

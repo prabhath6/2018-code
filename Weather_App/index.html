@@ -19,18 +19,23 @@
 
     <div class="container-fluid">
 
-        <div>
-            <pre id="weather"></pre>
-        </div>
-
-        <div class="weather-details">
-        </div>
-
             <div class="col-md-6 offset-md-3">
                 <h2>
+                    <h2 id="weather-location">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><h3 id="temp-state"></h3></li>
+                            <li class="list-inline-item"><h3 id="temp-country"></h3></li>
+                        </ul>
+                    </h2>
+
                     <h2 id="weather-icon"></h2>
-                    <p id="temp-val"></p>
-                    <h2><i id="degree-icon" class="wi wi-celsius" onclick="convertTemp();"></i></h2>
+                    <h2 id="weather-description"></h2>
+                    
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><h3 id="temp-val"></h3></li>
+                        <li class="list-inline-item"><h2><i id="degree-icon" class="wi wi-celsius" onclick="convertTemp();"></i></h2></li>
+                    </ul>
+
                 </h2>
             </div>
 
