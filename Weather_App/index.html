@@ -17,9 +17,9 @@
 
 <body onload="getCoordinates();">
 
-    <div class="container-fluid">
-
-            <div class="col-md-6 offset-md-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
                 <h2>
                     <h2 id="weather-location">
                         <ul class="list-inline">
@@ -27,46 +27,56 @@
                             <li class="list-inline-item"><h3 id="temp-country"></h3></li>
                         </ul>
                     </h2>
-
-                    <h2 id="weather-icon"></h2>
-                    <h2 id="weather-description"></h2>
-                    
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><h3 id="temp-val"></h3></li>
-                        <li class="list-inline-item"><h2><i id="degree-icon" class="wi wi-celsius" onclick="convertTemp();"></i></h2></li>
-                    </ul>
-
                 </h2>
             </div>
-
-            <form>
-                <div class="form-group row">
-                    <label class="col-3 col-form-label mr-2">Max</label>
-                    <div class="col-8">
-                        <p class="form-control-static" id="weather-max"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-3 col-form-label mr-2">Min</label>
-                    <div class="col-8">
-                        <p class="form-control-static" id="weather-min"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-3 col-form-label mr-2">Humidity</label>
-                    <div class="col-8">
-                        <p class="form-control-static" id="weather-humidity"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label class="col-3 col-form-label mr-2">Wind Speed</label>
-                    <div class="col-8">
-                        <p class="form-control-static" id="weather-speed"></p>
-                    </div>
-                </div>
-            </form>
-
         </div>
+    </div>
+
+    <div class="container">
+        <div class= "row">
+            <div class="col-md-4 offset-md-4">
+                <h2 id="weather-icon"></h2>
+                <h2 id="weather-description"></h2>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><h3 id="temp-val"></h3></li>
+                    <li class="list-inline-item"><h2><i id="degree-icon" class="wi wi-celsius" onclick="convertTemp();"></i></h2></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-3 col-form-label mr-2">Max</label>
+                        <div class="col-8">
+                            <p class="form-control-static" id="weather-max"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-3 col-form-label mr-2">Min</label>
+                        <div class="col-8">
+                            <p class="form-control-static" id="weather-min"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-3 col-form-label mr-2">Humidity</label>
+                        <div class="col-8">
+                            <p class="form-control-static" id="weather-humidity"></p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-3 col-form-label mr-2">Wind Speed</label>
+                        <div class="col-8">
+                            <p class="form-control-static" id="weather-speed"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 
