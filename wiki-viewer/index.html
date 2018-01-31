@@ -11,23 +11,25 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
 </head>
 
-<body onload="onLoad();">
+<body>
+    <div class="container">
+        <form id="searchTermContainer" action="#" onclick="getData();">
+            <div class="form-row align-items-center">
+                <div class="col-md-4 offset-md-4">
+                    <label class="sr-only" for="inlineFormInput">Name</label>
+                    <input type="text" class="form-control mb-4" id="searchTerm" placeholder="Search Term">
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="container">
         <div id="articles">
-            <div name="articles" class="card" data-link="https://www.google.com">
-                <div class="card-body" >
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
-            <div name="articles" class="card" data-link="https://www.google.com" >
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
         </div>
     </div>
 </body>

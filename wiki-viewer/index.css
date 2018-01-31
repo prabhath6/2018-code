@@ -1,18 +1,9 @@
-#search-icon {
-    font-size:48px;
-    color:black;
+#searchTermContainer {
+    margin-top: 300px;
 }
 
 #articles {
     margin-top: 10px;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-  }
-  body {
-    background: linear-gradient(50deg, RGBA(255,127,80), RGBA(135,206,235));
 }
 
 .card {
