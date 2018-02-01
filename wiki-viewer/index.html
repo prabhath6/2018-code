@@ -14,16 +14,23 @@
     <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <div class="container">
-        <form id="searchTermContainer" action="#" onclick="getData();">
+        <form id="searchTermContainer" action="#" onsubmit="getData();">
+            <div class="form-row align-items-center">
+                <div class="col-md-6 offset-md-3">
+                    <input type="text" class="form-control mb-3" id="searchTerm" placeholder="Search Term">
+                </div>
+            </div>
+        </form>
+        <form>
             <div class="form-row align-items-center">
                 <div class="col-md-4 offset-md-4">
-                    <label class="sr-only" for="inlineFormInput">Name</label>
-                    <input type="text" class="form-control mb-4" id="searchTerm" placeholder="Search Term">
+                    <button class="btn btn-success btn-block" onclick="surpriseMe();">Surprise Me</button>
                 </div>
             </div>
         </form>

@@ -3,8 +3,14 @@ function getData() {
     if(searchTerm) {
         var searchTermContainer = document.getElementById("searchTermContainer");
         searchTermContainer.style.marginTop = "20px";
-        getWikiData(searchTerm);
+        var url = `https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=${searchTerm}`;
+        getWikiData(url);
     }
+}
+
+function surpriseMe() {
+        var url = `https://en.wikipedia.org/wiki/Special:Random`;
+        window.open(url);
 }
 
 function mouseOut(event) {
@@ -22,15 +28,13 @@ function onClickOpenArticle(event){
     window.open(this.dataset.link);
 }
 
-function getWikiData(searchTerm){
-    var url = `https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=${searchTerm}`;
+function getWikiData(url){
 
     $.ajax({
         method: "GET",
         url: url,
         async:true,
         dataType : 'jsonp'
-        // crossDomain:true,
       })
     .done(function( msg ) {
         var articleDivs = document.getElementById("articles");
