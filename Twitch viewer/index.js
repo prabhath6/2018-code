@@ -1,4 +1,4 @@
-var all = [];
+var all = {};
 
 function getTwitchData() {
     var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
@@ -20,7 +20,7 @@ function getDataFromTwitch(channel, all) {
     });
 
     request.done(function(msg) {
-        all.push(msg);
+        all[channel] = msg;
     });
 
     request.fail(function( jqXHR, textStatus ) {
@@ -35,21 +35,18 @@ function createList(data) {
     var offlineSectionElement = document.getElementById('offline');
     var allSectionElement = document.getElementById('all');
 
-    for(var i = 0; i < data.length; i++) {
-        var channel = data[i];
+    for(var key in data) {
+        var channel = data[key];
         console.log(channel);
         if(channel.stream) {
-            onlineSectionElement.innerHTML += `<li class="list-group-item list-group-item-success">This is a primary list group item</li>`;
-            allSectionElement.innerHTML += `<li class="list-group-item list-group-item-success">This is a primary list group item</li>`;
+            onlineSectionElement.innerHTML += `<a href="${channel['_links']['channel']}" class="list-group-item list-group-item-action list-group-item-success text-center">${channel['stream']['game']}</a><br>`;
+            allSectionElement.innerHTML += `<a href="${channel['_links']['channel']}" class="list-group-item list-group-item-action list-group-item-success text-center">${channel['stream']['game']}</a><br>`;
         } else {
-            offlineSectionElement.innerHTML += `<li class="list-group-item list-group-item-danger">${channel}</li>`;
-            allSectionElement.innerHTML += `<li class="list-group-item list-group-item-danger">This is a danger list group item</li>`;
+            offlineSectionElement.innerHTML += `<a href="${channel['_links']['channel']}" class="list-group-item list-group-item-action list-group-item-danger text-center">${key}</a><br>`;
+            allSectionElement.innerHTML += `<a href="${channel['_links']['channel']}" class="list-group-item list-group-item-action list-group-item-danger text-center">${key}</a><br>`;
         }
     }
 }
-
-
-
 
 $(document).ajaxStop(function() {
     createList(all);

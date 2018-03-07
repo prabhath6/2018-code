@@ -1,0 +1,33 @@
+#start-section {
+    margin-top: 100px;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#start-section .card-header {
+    background: linear-gradient(to right, #74d5ec, #c7ffdc); /*Standard*/
+}
+
+#middle-section .card-header {
+    background: linear-gradient(to right, #74ec92, #e4ffc7); /*Standard*/
+}
+
+#end-section .card-header {
+    background: linear-gradient(to right, #ec7f74, #ffe1c7); /*Standard*/;
+}
+
+body{
+    background: radial-gradient(ellipse at center, #8374ec, #6c8eb3); /*Standard*/
+}
+
+h5, a {
+    font-family: 'Hind', sans-serif;
+}
+
+#twitch-header{
+    font-family: 'Lobster', cursive;
+    margin-top: 30px;
+}

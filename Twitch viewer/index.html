@@ -11,12 +11,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Hind|Lobster" rel="stylesheet"> 
     <link rel="stylesheet" href="index.css">
 </head>
 <body onload="getTwitchData();">
     <div class="container">
+    <h2 id="twitch-header" class="text-center">Twitch Viewer</h2>
         <div id="accordion">
-        <div class="card">
+        <div id="start-section" class="card border border-dark rounded">
             <div class="card-header" id="headingOne">
             <h5 class="mb-0">
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -27,12 +29,12 @@
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-                <ul class="list-group" id="all">
+                <ul class="list" id="all">
                 </ul>
             </div>
             </div>
         </div>
-        <div class="card">
+        <div id="middle-section" class="card border border-dark rounded">
             <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -42,12 +44,12 @@
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-                <ul class="list-group" id="online">
+                <ul class="list" id="online">
                 </ul>
             </div>
             </div>
         </div>
-        <div class="card">
+        <div id="end-section" class="card border border-dark rounded">
             <div class="card-header" id="headingThree">
             <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -57,7 +59,7 @@
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-                <ul class="list-group" id="offline">
+                <ul class="list" id="offline">
                 </ul>
             </div>
             </div>
